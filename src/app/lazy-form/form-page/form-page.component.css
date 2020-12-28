@@ -1,0 +1,6 @@
+label,input{
+  display: block;
+}
+input.ng-invalid.ng-dirty{
+  border: 2px red solid;
+}

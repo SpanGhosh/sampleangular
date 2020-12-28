@@ -1,0 +1,17 @@
+<div class="formcontainer">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label>
+      Name: <input formControlName="name">
+      <form-error [errorObj]="nameError"></form-error>
+    </label>
+    <label>
+      Email: <input formControlName="email">
+      <form-error [errorObj]="emailError"></form-error>
+    </label>
+    <label>
+      Age: <input formControlName="age" type="number">
+      <form-error [errorObj]="ageError"></form-error>
+    </label>
+    <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+  </form>
+</div>

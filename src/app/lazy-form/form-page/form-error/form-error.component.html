@@ -1,0 +1,23 @@
+<div>
+    <small class="text-danger"
+        *ngIf="errorObj.required">
+        This field is required.
+    </small>
+    <small class="text-danger"
+        *ngIf="errorObj.min">
+        The minimum value for this field is 18.
+    </small>
+    <small class="text-danger"
+        *ngIf="errorObj.max">
+        The maximum value for this field is 100.
+    </small>
+    <small class="text-danger"
+        *ngIf="errorObj.pattern">
+        Special characters not allowed
+    </small>
+    <small class="text-danger"
+        *ngIf="errorObj.email">
+        Email id to be entered
+    </small>
+</div>
+
